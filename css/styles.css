@@ -1,0 +1,243 @@
+body {
+    background: #F4F8FB;
+    font-family: Verdana, Geneva, sans-serif;
+}
+.tmain {
+    border: 1px solid #d7d7d7;
+    background:#fff;
+    padding: 25px;
+}
+.tmain_height{
+    height:60px;
+}
+.tmain_padding_top{
+    padding-top: 15px;
+}
+.tmain_padding_bottom{
+    padding-bottom: 15px;
+}
+.tmain_lg{
+    float:right;
+}
+.tmain_lg a{
+    margin: 0 2px;
+}
+.tmain_logo{
+    float:left;
+}
+.tmain_logo img{
+    width: 100px;
+}
+.tmain_cards{
+    float:right;
+}
+.tmain_cell{
+    background-color: #DBE7F3;
+    border-right: 1px solid #dde6ec;
+    border-left: 1px solid #dde6ec;
+}
+.tmain_cell_sum{
+    border-right: 1px solid #dde6ec;
+    border-top: 1px solid #dde6ec;
+
+}
+.tmain_cell_sum span{
+    font-size: 18px;
+    color: #18212d;
+}
+.tmain_border_button{
+    border-right: 1px solid #dde6ec;
+    border-left: 1px solid #dde6ec;
+    border-bottom:1px solid #dde6ec;
+}
+.tmain_cell_card{
+    border-right: 1px solid #dde6ec;
+    border-left: 1px solid #dde6ec;
+}
+.tmain tr td:not(.tmain_padding_bottom){
+    font-size: 15px;
+    padding: 18px;
+    padding-left: 20px;
+    color: #18212d;
+    background:#eef1f4;
+}
+.tmain tr td:nth-child(odd) {
+    border-top:1px solid #dde6ec;
+}
+.tmain tr td:nth-child(even) {
+    background:#f5f5f5;
+}
+.table{
+    width: 750px;
+}
+.footer p {
+    font-size: 6pt;
+    font-family: Geneva, Arial, Helvetica, sans-serif;
+    color: #4F8CAD;
+    padding: 5px 5px 5px 5px;
+}
+.font input, .font select {
+    font-size: 14px;
+    color: #18212d;
+    text-transform:uppercase;
+    background:#eee;
+    padding:10px;
+    border:1px solid #a4b4c3;
+    -webkit-box-shadow: inset 1px 2px 5px #dadada;
+    -moz-box-shadow: inset 1px 2px 5px #dadada;
+    box-shadow: inset 1px 2px 5px #dadada;
+}
+.font input {
+    width:100%;
+}
+.font {
+    border-right: 1px solid #dde6ec;
+}
+.button {
+    color: #000;
+    border-radius: 4px;
+    padding: 7px 15px;
+    background: #ffdb4d;
+    border: medium none;
+    font-family: Verdana, Geneva, sans-serif;
+    font-weight: normal;
+    cursor: pointer;
+}
+.tooltip {
+    color: #696969;
+    outline: none;
+    cursor: help;
+    text-decoration: none;
+    position: relative;
+    z-index:10;
+}
+.tooltip span {
+    margin-left: -999em;
+    position: absolute;
+}
+.tooltip:hover span {
+    border-radius: 5px 5px;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+    position: absolute;
+    margin-left: 0;
+    width: 227px;
+    height: 200px;
+}
+.img2 {
+    border: 0;
+    margin: 10px 0 0 10px;
+    float: left;
+    position: absolute;
+}
+.help {
+    background: #F4F8FB;
+    border: 1px solid #B7D1E2;
+}
+.cc_input_style {
+    width: 180px;
+}
+.name_input_style {
+    width: 180px;
+}
+#cvv{
+    width: 55px;
+}
+.cvv_input_style {
+    width: 60px;
+}
+#logo-frame {
+    border: 0;
+    height: 1px;
+    width: 1px;
+    opacity: 0;
+}
+
+#logo-frame img{
+    height: 1px;
+    width: 1px;
+    opacity: 0;
+}
+#ln_change_opis {
+    column-count: 2;
+    font-size:10px;
+    color:#a6b7c7;
+    text-align:justify;
+}
+#ln_card_details {
+    font-size:21px;
+    font-weight:normal;
+}
+.cardholder{
+    position: relative;
+}
+.holder-error{
+    color: #B22222;
+    font-size: 12px;
+    position: absolute;
+    display: none;
+
+}
+tr .holder-error.length,
+tr .holder-error.symbol,
+tr .holder-error.numbers,
+tr .holder-error.numbers_ln {
+    display: none;
+}
+tr .error td {
+    color: #B22222!important;
+}
+.error input[type='text'], .error select{
+    border-color: #B22222;
+}
+
+.error .holder-error,
+tr .error.length .holder-error.length,
+tr .error.symbol .holder-error.symbol,
+tr .error.numbers .holder-error.numbers,
+tr .error.numbers_ln .holder-error.numbers_ln {
+    display: block;
+}
+.ln_submit_color{
+    background: gray;
+}
+
+@media screen and (max-width:776px){
+    .table{
+        width:100%!important;
+    }
+}
+@media screen and (max-width:456px){
+    .tmain_logo{
+        padding-bottom: 15px;
+    }
+    .tmain_cards{
+        float: none!important;
+    }
+    #lbl_name_on_cc, #lbl_cc, #lbl_cc_expire, #lbl_cvv{
+        padding: 55px;
+        padding-left: 20px;
+    }
+
+}
+@media screen and (max-width:700px) {
+    .tmain_height {
+        height: 100px !important;
+    }
+
+    #lbl_name_on_cc, #lbl_cc{
+        padding: 50px;
+        padding-left: 20px;
+    }
+}
+@media screen and (max-width:462px){
+    .tmain_height{
+        height:162px!important;
+    }
+    #cc_expire_month{
+        margin-bottom: 3px;
+    }
+   .holder-error{
+       font-size: 10px;
+       width:100px;
+   }
+}

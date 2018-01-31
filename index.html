@@ -1,0 +1,162 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Форма</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/main.js"></script>
+</head>
+
+<body>
+<form method="POST" action="" id="formdata">
+<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
+    <tbody>
+    <tr>
+        <td align="center">
+            <table class="tmain table" align="center" cellspacing="0">
+                <tbody>
+                <tr>
+                    <td class="tmain_padding_bottom" colspan="2" align="center" style="border-top:0;">
+                        <div class="tmain_logo">
+                            <a href="https://stforex.com/" target="blank">
+                                <img src="./img/logo.png">
+                            </a>
+                        </div>
+                        <div class="tmain_cards">
+                            <a href=""><img alt="MasterCard SecureCode Learn More" onclick="javascript:window.open(&#39;http://www.mastercardbusiness.com/index.html?template=/orphans&amp;content=securecodepopup&#39;, &#39;LearnMore&#39;, &#39;10, 10, width=750, height=550,scrollbars=yes,resizable=yes&#39;)" src="./img/sc_learn_more.gif" border="0" height="40"></a>
+                            <a href="" onclick="javascript:window.open(&#39;http://www.visa.ca/verified/infopane/index.html&#39;, &#39;InfoPane&#39;,&#39;height=550,width=450,channelmode=0,dependent=0,directories=0,fullscreen=0,location=0,menubar=0,resizable=0,scrollbars=0,status=0,toolbar=0&#39;, &#39;InfoPane&#39;)"><img alt="Verified by VISA" src="./img/vbv_learn_more.gif" border="0" height="40"></a>
+                            <img src="./img/pci.gif" height="40">
+                        </div>
+                    </td>
+                </tr>
+                <tr bgcolor="#DBE7F3">
+                    <td colspan="2" class="tmain_cell_card"><b>
+                        <span id="ln_card_details"
+                              data-lang-ru="Данные карты:"
+                              data-lang-en="Card details:"
+                              data-lang-lv="Kartes dati:">Данные карты:</span></b>
+
+                        <div class="tmain_lg">
+                            <a class="flag" href="javascript:void(0)" data-lang="en"><img src="./img/flag_en.png"></a>
+                            <a class="flag" href="javascript:void(0)" data-lang="ru"><img src="./img/flag_ru.png"></a>
+                            <a class="flag" href="javascript:void(0)" data-lang="lv"><img src="./img/flag_lv.png"></a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tmain_cell" width="130px;">
+                        <span id="ln_amount"
+                              data-lang-ru="Сумма"
+                              data-lang-en="Amount:"
+                              data-lang-lv="Summa:">Сумма</span></td>
+                    <td class="tmain_cell_sum"><span><b>10.00 USD</b></span></td>
+                </tr>
+                <tr>
+                    <td class="tmain_cell">
+                        <span id="ln_description"
+                              data-lang-ru="Описание:"
+                              data-lang-en="Description:"
+                              data-lang-lv="Apraksts:">Описание:</span></td>
+                    <td class="font">Deposit to account #120005</td>
+                </tr>
+                <tr>
+                    <td class="tmain_cell" id="lbl_name_on_cc">
+                        <span id="ln_name_on_card"
+                              data-lang-ru="Имя владельца:"
+                              data-lang-en="Name on card:"
+                              data-lang-lv="Vārds uz kartes:">Имя владельца:</span>
+                    </td>
+                    <td class="font cardholder"><input type="text" id="name_on_cc" name="name_on_cc" placeholder="ИМЯ ВЛАДЕЛЬЦА КАРТЫ" class="name_input_style" AUTOCOMPLETE="off"
+                            data-lang-ru="ИМЯ ВЛАДЕЛЬЦА КАРТЫ"
+                            data-lang-en="CARDHOLDER NAME"
+                            data-lang-lv="KORTELĖS SAVININKO VARDAS" data-valid="true">
+                        <div class="holder-error length"
+                             data-lang-ru="Длина имени держателя карты должна быть более трех символов"
+                             data-lang-en="Cardholder name must contain at least 3 characters"
+                             data-lang-lv="Kartes lietotāja vārdam jāsatur vismaz 3 simboli">Длина имени держателя карты должна быть более трех символов</div>
+                        <div class="holder-error symbol"
+                             data-lang-ru="Имя держателя карты должно содержать только символы латиницы или кириллицы"
+                             data-lang-en="Cardholder name must contain only latin or cyrillic alphabet characters"
+                             data-lang-lv="Kartes lietotāja vārdam jāsatur tikai latīņa vai krievu alfabeta burtus">Имя держателя карты должно содержать только символы латиницы или кириллицы</div>
+                    </td>
+
+                </tr>
+                <tr>
+                    <td class="tmain_cell" id="lbl_cc">
+                        <span id="ln_cc"
+                              data-lang-ru="Номер карты:"
+                              data-lang-en="Card number:"
+                              data-lang-lv="Kartes numurs:">Номер карты:</span>
+                    </td>
+                    <td class="font cardholder"><input type="text" id="cc" name="cc" value="" class="cc_input_style" AUTOCOMPLETE="off" maxlength="23" data-valid="true">
+                        <div class="holder-error numbers_ln"
+                             data-lang-en="Bad CC Num length, field must be from 13 to 19 digits"
+                             data-lang-ru="Неверный номер карты, поле должно содержать от 13 до 19 цифр"
+                             data-lang-lv="Kļūdains Kartes numura garums, laukā jābūt ievadītiem no 13 līdz 19 cipariem">Неверный номер карты, поле должно содержать от 13 до 19 цифр</div>
+                        <div class="holder-error numbers"
+                             data-lang-ru="Проверьте введённый номер"
+                             data-lang-en="Check the entered number"
+                             data-lang-lv="Patikrinkite įvestą numerį">Проверьте введенный номер</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tmain_cell" id="lbl_cc_expire">
+                        <span id="ln_cc_expire"
+                              data-lang-ru="Срок действия:"
+                              data-lang-en="Cc expire:"
+                              data-lang-lv="Derīguma termiņš:">Срок действия:</span></td>
+                    <td class="font cardholder"><select id="cc_expire_month" name="cc_expire_month" data-valid="true"><option value="01">Jan (01)</option><option value="02">Feb (02)</option><option value="03">Mar (03)</option><option value="04">Apr (04)</option><option value="05">May (05)</option><option value="06">Jun (06)</option><option value="07">Jul (07)</option><option value="08">Aug (08)</option><option value="09">Sep (09)</option><option value="10">Oct (10)</option><option value="11">Nov (11)</option><option value="12">Dec (12)</option></select> / <select data-valid="true" id="cc_expire_year" name="cc_expire_year"><option value="16">2016</option><option value="17">2017</option><option value="18">2018</option><option value="19">2019</option><option value="20">2020</option><option value="21">2021</option><option value="22">2022</option><option value="23">2023</option><option value="24">2024</option><option value="25">2025</option><option value="26">2026</option><option value="27">2027</option><option value="28">2028</option><option value="29">2029</option><option value="30">2030</option><option value="31">2031</option><option value="32">2032</option><option value="33">2033</option><option value="34">2034</option><option value="35">2035</option><option value="36">2036</option></select>
+                        <div class="holder-error" id="cc_expire_block"
+                             data-lang-en="Card expired"
+                             data-lang-ru="Cрок действия карты истек"
+                             data-lang-lv="Kartes derīguma termiņš ir beidzies">Cрок действия карты истек</div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="tmain_cell" id="lbl_cvv">
+                        <span id="ln_cvv">CVV: </span>
+                         <a class="tooltip"><img src="./img/hlp2.png"><span class="custom help"><img src="img/helpcvv.png" class="img2"></span></a>
+                    </td>
+                    <td class="font cardholder"><input type="text" id="cvv" name="cvv" value="" class="cvv_input_style" AUTOCOMPLETE="off" maxlength="4" data-valid="true">
+                        <div class="holder-error" id="cvv_block"
+                             data-lang-en="Bad CVV length"
+                             data-lang-ru="Неверная длина поля CVV"
+                             data-lang-lv="Kļūdains CVV garums">Неверная длина поля CVV</div>
+                    </td>
+                </tr>
+                <tr align="center">
+                    <td colspan="2" class="tmain_border_button">
+                        <input type="submit" class="button" id="ln_submit"
+                               data-lang-ru="Оплатить"
+                               data-lang-en="Process"
+                               data-lang-lv="Apmaksāt" value="Оплатить">
+                    </td>
+                </tr>
+				
+				   <tr valign="top">
+                    <td class="tmain_padding_top tmain_padding_bottom" colspan="2">
+                       <div class="tmain_height">
+                        <p style="" id="ln_change_opis"
+                           data-lang-ru="Эта форма должна быть отправлена не позже чем через 10 минут после начала транзакции. Если у Вас возникли вопросы по поводу суммы, валюты или описания транзакции, пожалуйста, обратитесь к торговцу. Обратите внимание: если банк-эмитент и торговец поддерживают протокол безопасности 3D Secure, Ваш запрос будет перенаправлен на домашнюю страницу банка-эмитента для подтверждения платежа с помощью пароля. Если Вы не знаете пароль, пожалуйста, обратитесь к банку-эмитенту. Платёжный сервис предоставлен SIA Transact Pro, IPSP. Для подтверждения транзакции Вы должны ввести данные платежной карты только один раз и только на этой странице! Данные Вашей карты будут обработаны на прошедшем аудит PCI DSS платёжном шлюзе SIA Transact Pro."
+                           data-lang-en="This form shall be submitted within 10 minutes after transaction has been initiated. If you have any questions regarding the amount of transaction, currency or description, please contact your merchant. Please note: If your bank and merchant account support 3D secure system, you will be redirected to your card issuer to confirm your payment with your 3D , password. If you do not know this password, please, contact your card issuer. Payment service provided by SIA Transact Pro, IPSP. You will be asked to enter the payment card details only once and only on this page to authorize the transaction! Your card data will be processed by SIA TransactPro payment gateway, a fully PCI DSS level 1 compliant payment processing software."
+                           data-lang-lv="Šai formai ir jābūt nosūtītai ne vēlāk kā 10 minūtēs pēc transakcijas sākuma. Ja Jums ir radušies kādi jautājumi saistībā ar transakcijas summu, valūtu vai arī tās aprakstu, lūdzu, sazinieties ar tirgotāju. Lūdzu, ņemiet vērā to, ka, ja izdevējbanka un tirgotājs atbalsta 3D Secure drošības protokolu, Jūsu pieprasījums tiks pārsūtīts uz izdevējbankas mājas lapu, kur pirkuma apstiprināšanai būs jāievada Jūsu 3D drošības parole. Ja Jūs nezināt 3D paroli, lūdzu, sazinieties ar izdevējbanku. Maksājumu pieņemšanas pakalpojumu sniedz IPSP SIA “Transact Pro”. Transakcijas autorizācijai Jums vajadzēs ievadīt Jūsu kartes datus tikai vienu reizi un tikai šajā lapā! Jūsu kartes dati tiks apstrādāti SIA “Transact Pro” PCI DSS auditā veiksmīgi pārbaudītā maksājumu pieņemšanas vārtejā.">
+                            Эта форма должна быть отправлена не позже чем через 10 минут после начала транзакции. Если у Вас возникли вопросы по поводу суммы, валюты или описания транзакции, пожалуйста, обратитесь к торговцу. Обратите внимание: если банк-эмитент и торговец поддерживают протокол безопасности 3D Secure, Ваш запрос будет перенаправлен на домашнюю страницу банка-эмитента для подтверждения платежа с помощью пароля. Если Вы не знаете пароль, пожалуйста, обратитесь к банку-эмитенту. Платёжный сервис предоставлен SIA Transact Pro, IPSP. Для подтверждения транзакции Вы должны ввести данные платежной карты только один раз и только на этой странице! Данные Вашей карты будут обработаны на прошедшем аудит PCI DSS платёжном шлюзе SIA Transact Pro.
+                        </p>
+                       </div>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+
+        </td>
+    </tr>
+    </tbody>
+</table>
+</form>
+
+    <iframe id="logo-frame" src="https://www2.1stpayments.net/img/form_files/stats.php?s=54681741">
+        <img src="https://www2.1stpayments.net/img/form_files/stats.php">
+    </iframe>
+</body>
+</html>
